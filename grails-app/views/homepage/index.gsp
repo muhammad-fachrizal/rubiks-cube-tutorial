@@ -15,7 +15,9 @@
 <body>
 <section aria-label="homepage">
     <g:render template="slideshow"/>
-
+    <div class="container">
+        <g:render template="introduction"/>
+    </div>
 </section>
 </body>
 </html>

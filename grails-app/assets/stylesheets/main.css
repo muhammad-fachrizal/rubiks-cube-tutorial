@@ -613,3 +613,24 @@ img.grails-logo {
     background-position:center;
     background-size:cover
 }
+/*TEXT COLOR*/
+.c-blue {
+    color: #2559a7;
+}
+
+.c-green {
+    color: #1c7430;
+}
+
+.c-red {
+    color: #a60000;
+}
+
+/*IMAGE NOTATION*/
+.img-notation {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 140px;
+}
+
