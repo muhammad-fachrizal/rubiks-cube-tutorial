@@ -17,6 +17,7 @@
     <g:render template="slideshow"/>
     <div class="container">
         <g:render template="introduction"/>
+        <g:render template="instruction"/>
     </div>
 </section>
 </body>

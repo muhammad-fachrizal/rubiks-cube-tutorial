@@ -634,3 +634,32 @@ img.grails-logo {
     width: 140px;
 }
 
+/*LAYOUT CARD INSTRUCTION*/
+.o-cards {
+    margin-bottom:30px;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+}
+
+.c-card {
+    -webkit-box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+}
+
+.img-instruction {
+    display: block;
+    margin-top: 10px;
+    width: 140px;
+}
+
+.btn-read-more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+

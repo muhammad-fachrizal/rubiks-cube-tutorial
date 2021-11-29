@@ -4,7 +4,7 @@
     <h2 class="font-weight-bold pt-2"><g:message code="homepage.vocabulary.label" /></h2>
     <p><g:message code="homepage.vocabulary.description.label" /></p>
     <div class="row">
-        <div class="col-lg-7">
+        <div class="col-lg-8">
             <p><b class="c-red"><g:message code="homepage.vocabulary.center.label" /></b> <g:message code="homepage.vocabulary.center.description.label" /></p>
             <p><b class="c-green"><g:message code="homepage.vocabulary.edge.label" /></b> <g:message code="homepage.vocabulary.edge.description.label" /></p>
             <p><b class="c-blue"><g:message code="homepage.vocabulary.corner.label" /></b> <g:message code="homepage.vocabulary.corner.description.label" /></p>
