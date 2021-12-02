@@ -17,32 +17,32 @@
     <div class="row mb-5">
         <div class="col-lg-2">
             <p class="text-center"><g:message code="homepage.notation.f.label" /></p>
-            <g:img class="img-notation" dir="/../assets/homepage" file="rubiks-notation-f.png" />
+            <g:img class="c-img-notation" dir="/../assets/homepage" file="rubiks-notation-f.png" />
             <p class="text-center"><g:message code="homepage.notation.front.label"  /></p>
         </div>
         <div class="col-lg-2">
             <p class="text-center"><g:message code="homepage.notation.b.label" /></p>
-            <g:img class="img-notation" dir="/../assets/homepage" file="rubiks-notation-b.png" />
+            <g:img class="c-img-notation" dir="/../assets/homepage" file="rubiks-notation-b.png" />
             <p class="text-center"><g:message code="homepage.notation.back.label"  /></p>
         </div>
         <div class="col-lg-2">
             <p class="text-center"><g:message code="homepage.notation.r.label" /></p>
-            <g:img class="img-notation" dir="/../assets/homepage" file="rubiks-notation-r.png" />
+            <g:img class="c-img-notation" dir="/../assets/homepage" file="rubiks-notation-r.png" />
             <p class="text-center"><g:message code="homepage.notation.right.label"  /></p>
         </div>
         <div class="col-lg-2">
             <p class="text-center"><g:message code="homepage.notation.l.label" /></p>
-            <g:img class="img-notation" dir="/../assets/homepage" file="rubiks-notation-l.png" />
+            <g:img class="c-img-notation" dir="/../assets/homepage" file="rubiks-notation-l.png" />
             <p class="text-center"><g:message code="homepage.notation.left.label"  /></p>
         </div>
         <div class="col-lg-2">
             <p class="text-center"><g:message code="homepage.notation.u.label" /></p>
-            <g:img class="img-notation" dir="/../assets/homepage" file="rubiks-notation-u.png" />
+            <g:img class="c-img-notation" dir="/../assets/homepage" file="rubiks-notation-u.png" />
             <p class="text-center"><g:message code="homepage.notation.up.label"  /></p>
         </div>
         <div class="col-lg-2">
             <p class="text-center"><g:message code="homepage.notation.d.label" /></p>
-            <g:img class="img-notation" dir="/../assets/homepage" file="rubiks-notation-d.png" />
+            <g:img class="c-img-notation" dir="/../assets/homepage" file="rubiks-notation-d.png" />
             <p class="text-center"><g:message code="homepage.notation.down.label"  /></p>
         </div>
     </div>
@@ -50,32 +50,32 @@
     <div class="row">
         <div class="col-lg-2">
             <p class="text-center"><g:message code="homepage.notation.f'.label" /></p>
-            <g:img class="img-notation" dir="/../assets/homepage" file="rubiks-notation-f'.png" />
+            <g:img class="c-img-notation" dir="/../assets/homepage" file="rubiks-notation-f'.png" />
             <p class="text-center"><g:message code="homepage.notation.front.label"  /></p>
         </div>
         <div class="col-lg-2">
             <p class="text-center"><g:message code="homepage.notation.b'.label" /></p>
-            <g:img class="img-notation" dir="/../assets/homepage" file="rubiks-notation-b'.png" />
+            <g:img class="c-img-notation" dir="/../assets/homepage" file="rubiks-notation-b'.png" />
             <p class="text-center"><g:message code="homepage.notation.back.label"  /></p>
         </div>
         <div class="col-lg-2">
             <p class="text-center"><g:message code="homepage.notation.r'.label" /></p>
-            <g:img class="img-notation" dir="/../assets/homepage" file="rubiks-notation-r'.png" />
+            <g:img class="c-img-notation" dir="/../assets/homepage" file="rubiks-notation-r'.png" />
             <p class="text-center"><g:message code="homepage.notation.right.label"  /></p>
         </div>
         <div class="col-lg-2">
             <p class="text-center"><g:message code="homepage.notation.l'.label" /></p>
-            <g:img class="img-notation" dir="/../assets/homepage" file="rubiks-notation-l'.png" />
+            <g:img class="c-img-notation" dir="/../assets/homepage" file="rubiks-notation-l'.png" />
             <p class="text-center"><g:message code="homepage.notation.left.label"  /></p>
         </div>
         <div class="col-lg-2">
             <p class="text-center"><g:message code="homepage.notation.u'.label" /></p>
-            <g:img class="img-notation" dir="/../assets/homepage" file="rubiks-notation-u'.png" />
+            <g:img class="c-img-notation" dir="/../assets/homepage" file="rubiks-notation-u'.png" />
             <p class="text-center"><g:message code="homepage.notation.up.label"  /></p>
         </div>
         <div class="col-lg-2">
             <p class="text-center"><g:message code="homepage.notation.d'.label" /></p>
-            <g:img class="img-notation" dir="/../assets/homepage" file="rubiks-notation-d'.png" />
+            <g:img class="c-img-notation" dir="/../assets/homepage" file="rubiks-notation-d'.png" />
             <p class="text-center"><g:message code="homepage.notation.down.label"  /></p>
         </div>
     </div>
