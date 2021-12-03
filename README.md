@@ -5,3 +5,4 @@ Requirements
 - Grails 3.3.11
 - JVM 1.8
 - Gradle 3.5
+- PostgreSQL 12.9
