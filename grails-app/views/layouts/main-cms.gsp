@@ -1,3 +1,11 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: fachrizal
+  Date: 12/7/21
+  Time: 11:40 AM
+--%>
+
+<%@ page contentType="text/html;charset=UTF-8" %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -15,14 +23,11 @@
 </head>
 
 <body class="en" data-direction="ltr" data-template="default">
-
-<g:render template="/template/header"/>
     <div class="root">
         <main>
             <g:layoutBody/>
         </main>
     </div>
-
-<asset:javascript src="application.js"/>
+    <asset:javascript src="application.js"/>
 </body>
 </html>

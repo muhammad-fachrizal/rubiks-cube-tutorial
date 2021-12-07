@@ -19,5 +19,15 @@ class InitDataService {
             }
         }
 
+        def adminRole = Role.findByAuthority('ROLE_ADMIN') ?: new Role(authority: 'ROLE_ADMIN').save(failOnError: true)
+        def adminUser = CmsUser.findByUsername('admin') ?: new CmsUser(
+                username: 'admin',
+                password: 'admin',
+                enabled: true).save(failOnError: true)
+
+        if (!adminUser.authorities.contains(adminRole)) {
+            CmsUserRole.create adminUser, adminRole
+        }
+
     }
 }
