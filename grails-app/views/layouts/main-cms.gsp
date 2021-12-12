@@ -23,6 +23,7 @@
 </head>
 
 <body class="en" data-direction="ltr" data-template="default">
+    <g:render template="/template/header-cms"/>
     <div class="root">
         <main>
             <g:layoutBody/>

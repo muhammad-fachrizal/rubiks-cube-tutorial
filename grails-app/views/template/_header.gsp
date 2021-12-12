@@ -12,7 +12,7 @@
                         <g:message code="header.article.label" default="Article" />
                     </a>
                 </li>
-                
+
             </ul>
         </div>
     </nav>

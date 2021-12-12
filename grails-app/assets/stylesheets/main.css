@@ -690,4 +690,12 @@ img.grails-logo {
     display: inline-block;
 }
 
+.o-table-description {
+    line-height: 2em;
+    height: 3em;
+    overflow: hidden;
+    display: inline-block;
+}
+
+
 
