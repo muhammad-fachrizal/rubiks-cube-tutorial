@@ -672,7 +672,7 @@ img.grails-logo {
     margin-bottom: 30px;
 }
 
-.card-body {
+.o-text-article {
     z-index:100;
     padding-top:310px;
 }
@@ -690,6 +690,7 @@ img.grails-logo {
     display: inline-block;
 }
 
+/* CMS ARTICLE TABLE */
 .o-table-description {
     line-height: 2em;
     height: 3em;
@@ -697,5 +698,8 @@ img.grails-logo {
     display: inline-block;
 }
 
-
+/*REMOVE IMAGE FILE UPLOAD ON SUMMERNOTE*/
+.note-group-select-from-files {
+    display: none;
+}
 

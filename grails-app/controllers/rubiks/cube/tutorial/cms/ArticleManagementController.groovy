@@ -27,4 +27,31 @@ class ArticleManagementController{
             redirect(controller: "ArticleManagement", action: "index")
         }
     }
+
+    def edit(Long id) {
+        def response = articleManagementService.get(id)
+        if (!response){
+            flash.error = 'Invalid Entity!'
+            redirect(controller: "ArticleManagement", action: "index")
+        }else{
+            render(view: "/cms/articleManagement/edit", model:[article: response])
+        }
+    }
+
+    def update() {
+        def response = articleManagementService.get(params.id)
+        if (!response){
+            flash.error = 'Invalid Entity ID!'
+            redirect(controller: "ArticleManagement", action: "index")
+        }else{
+            def resp = articleManagementService.update(response, params, request)
+            if (!resp.isSuccess){
+                flash.message = 'Invalid Update!'
+                redirect(controller: "ArticleManagement", action: "index")
+            }else{
+                flash.message = 'Update success!'
+                redirect(controller: "ArticleManagement", action: "index")
+            }
+        }
+    }
 }

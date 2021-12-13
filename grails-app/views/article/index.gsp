@@ -23,9 +23,11 @@
                                 <div class="card c-card position-relative">
                                     <div class="card-img-top c-img-article" style="background-image: url('${article.image}')"></div>
                                     <div class="card-body">
-                                        <p class="card-title"><b>${article.title}</b></p>
-                                        <p class="card-text">${article.description}</p>
-                                        <a class="stretched-link btn" href="#"></a>
+                                        <div class="o-text-article">
+                                            <p class="card-title" ><b>${article.title}</b></p>
+                                            <p class="card-text">${article.description}</p>
+                                            <a class="stretched-link btn" href="#"></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

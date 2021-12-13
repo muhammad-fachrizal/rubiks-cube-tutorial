@@ -13,7 +13,7 @@
 </head>
 
 <body class="hold-transition sidebar-mini">
-    <section aria-label="articleManagement">
+    <section aria-label="articleList">
         <div class="container">
             <div class="card mt-5">
                 <div class="card-header">
