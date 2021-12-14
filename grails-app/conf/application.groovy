@@ -10,7 +10,8 @@ grails.plugin.springsecurity.userLookup.userDomainClassName = 'rubiks.cube.tutor
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'rubiks.cube.tutorial.CmsUserRole'
 grails.plugin.springsecurity.authority.className = 'rubiks.cube.tutorial.Role'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
-	[pattern: '/',               access: ['permitAll']],
+	[pattern: '/',             	 access: ['permitAll']],
+	[pattern: '/**',             access: ['permitAll']],
 	[pattern: '/notFound',       access: ['permitAll']],
 	[pattern: '/error',          access: ['permitAll']],
 	[pattern: '/index',          access: ['permitAll']],
@@ -32,5 +33,5 @@ grails.plugin.springsecurity.filterChain.chainMap = [
 	[pattern: '/**',             filters: 'JOINED_FILTERS']
 ]
 
-grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/cms/index'
+grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/cms'
 

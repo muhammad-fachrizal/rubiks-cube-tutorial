@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title><g:message code="header.article.label" /></title>
+    <title><g:message code="header.article.label" default="Article"/></title>
 </head>
 
 <body>

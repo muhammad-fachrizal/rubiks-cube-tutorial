@@ -54,4 +54,14 @@ class ArticleManagementController{
             }
         }
     }
+
+    def show(Long id) {
+        def response = articleManagementService.get(id)
+        if (!response){
+            flash.error = 'Invalid Entity!'
+            redirect(controller: "ArticleManagement", action: "index")
+        }else{
+            render(view: "/cms/articleManagement/show", model:[article: response])
+        }
+    }
 }

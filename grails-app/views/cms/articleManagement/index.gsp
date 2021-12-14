@@ -12,10 +12,10 @@
     <title><g:message code="cms.article.management.list.label" default="Article List" /></title>
 </head>
 
-<body class="hold-transition sidebar-mini">
+<body>
     <section aria-label="articleList">
         <div class="container">
-            <div class="card mt-5">
+            <div class="card card-primary mt-5">
                 <div class="card-header">
                     <h1 class="card-title">
                         <g:message code="cms.article.management.list.label" default="Article List" />
@@ -33,14 +33,12 @@
                         <tbody>
                             <g:each in="${articleList}" status="i" var="article">
                                 <tr>
-                                    <td><g:link action="show" id="${article.id}">${article.title}</g:link></td>
+                                    <td class="font-weight-bold">${article.title}</td>
                                     <td class="o-table-description">${article.description}</td>
                                     <td class="project-actions text-right">
-                                            <g:link action="view" id="${article.id}" class="btn btn-sm btn-primary"><g:message code="cms.article.management.view.button" default="View" /></g:link>
-                                            &nbsp;
-                                            <g:link action="edit" id="${article.id}" class="btn btn-sm btn-info"><g:message code="cms.article.management.edit.button" default="Edit" /></g:link>
-                                            &nbsp;
-                                            <g:link action="delete" id="${article.id}" class="btn btn-sm btn-danger"><g:message code="cms.article.management.delete.button" default="Delete" /></g:link>
+                                            <g:link action="show" id="${article.id}" class="btn btn-sm btn-primary mr-2"><g:message code="cms.article.management.view.button" default="View" /></g:link>
+                                            <g:link action="edit" id="${article.id}" class="btn btn-sm btn-info mr-2"><g:message code="cms.article.management.edit.button" default="Edit" /></g:link>
+                                            <g:link action="delete" id="${article.id}" class="btn btn-sm btn-danger mr-2"><g:message code="cms.article.management.delete.button" default="Delete" /></g:link>
 
                                     </td>
                                 </tr>

@@ -12,7 +12,7 @@
     <title><g:message code="cms.article.management.edit.label" default="Article Edit" /></title>
 </head>
 
-<body class="hold-transition sidebar-mini">
+<body>
     <section aria-label="articleEdit">
         <div class="container">
             <div class="row mt-5">

@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title><g:message code="header.title.label" /></title>
+    <title><g:message code="header.title.label" default="Rubik's Cube for Beginners"/></title>
 </head>
 
 <body>
