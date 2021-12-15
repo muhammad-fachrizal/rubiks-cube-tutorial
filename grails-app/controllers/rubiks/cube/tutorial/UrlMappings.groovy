@@ -10,8 +10,8 @@ class UrlMappings {
         "/homepage"(controller: "homepage", action: "index")
         "/article"(controller: "article", action: "index")
 
-        "/login/auth"(controller: 'login', action: 'auth')
-        "/logout/index"(controller: "logout", action: "index")
+        "/login/$action?"(controller: 'login')
+        "/logout/$action?"(controller: "logout")
 
         group "/cms", {
             "/login"(controller: "login", action: "auth")
