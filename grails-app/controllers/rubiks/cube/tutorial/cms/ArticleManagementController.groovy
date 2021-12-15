@@ -16,7 +16,7 @@ class ArticleManagementController{
         def response = articleManagementService.get(id)
         if (!response){
             flash.error = 'Invalid Entity!'
-            redirect(controller: "ArticleManagement", action: "index")
+            redirect(uri: "/cms/articleManagement")
         }else{
             response = articleManagementService.delete(response)
             if (!response){
@@ -24,7 +24,7 @@ class ArticleManagementController{
             }else{
                 flash.message = 'Article has been deleted'
             }
-            redirect(controller: "ArticleManagement", action: "index")
+            redirect(uri: "/cms/articleManagement")
         }
     }
 
@@ -32,7 +32,7 @@ class ArticleManagementController{
         def response = articleManagementService.get(id)
         if (!response){
             flash.error = 'Invalid Entity!'
-            redirect(controller: "ArticleManagement", action: "index")
+            redirect(uri: "/cms/articleManagement")
         }else{
             render(view: "/cms/articleManagement/edit", model:[article: response])
         }
@@ -42,15 +42,15 @@ class ArticleManagementController{
         def response = articleManagementService.get(params.id)
         if (!response){
             flash.error = 'Invalid Entity ID!'
-            redirect(controller: "ArticleManagement", action: "index")
+            redirect(uri: "/cms/articleManagement")
         }else{
             def resp = articleManagementService.update(response, params, request)
             if (!resp.isSuccess){
                 flash.message = 'Invalid Update!'
-                redirect(controller: "ArticleManagement", action: "index")
+                redirect(uri: "/cms/articleManagement")
             }else{
                 flash.message = 'Update success!'
-                redirect(controller: "ArticleManagement", action: "index")
+                redirect(uri: "/cms/articleManagement")
             }
         }
     }
@@ -59,7 +59,7 @@ class ArticleManagementController{
         def response = articleManagementService.get(id)
         if (!response){
             flash.error = 'Invalid Entity!'
-            redirect(controller: "ArticleManagement", action: "index")
+            redirect(uri: "/cms/articleManagement")
         }else{
             render(view: "/cms/articleManagement/show", model:[article: response])
         }
