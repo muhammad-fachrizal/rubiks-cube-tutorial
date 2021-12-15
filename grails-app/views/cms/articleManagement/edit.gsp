@@ -38,7 +38,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="summernote-description"><g:message code="cms.article.management.description" default="Description" /></label>
-                                    <textarea id="summernote-description" name="description" class="form-control" data-description-value="${article.description}" required></textarea>
+                                    <textarea id="summernote-description" name="description" class="form-control" required>${article.description}</textarea>
                                 </div>
                                 <div class="col-12">
                                     <a href="${createLink(action: 'index', controller: 'articleManagement')}" id="btnCancel" class="btn btn-secondary"><g:message code="cms.article.management.cancel.button" default="Cancel" /></a>

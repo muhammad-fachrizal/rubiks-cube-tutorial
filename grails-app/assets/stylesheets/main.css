@@ -703,3 +703,8 @@ img.grails-logo {
     display: none;
 }
 
+/*REMOVE DOUBLE DROPDOWN ICON ON SUMMERNOTE*/
+.note-icon-caret{
+    display: none;
+}
+

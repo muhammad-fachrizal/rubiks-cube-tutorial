@@ -24,7 +24,7 @@
                     <h3>${article.title}</h3>
                     <h2><b><g:message code="cms.article.management.image.link" default="Image Link" /></b></h2>
                     <h3>${article.image}</h3>
-                    <img src="${article.image}" width="240" height="240">
+                    <img src="${article.image}" alt="article image" width="240" height="240">
                     <h2><b><g:message code="cms.article.management.description" default="Description" /></b></h2>
                     <h3>${article.description}</h3>
                     <div class="mt-4">

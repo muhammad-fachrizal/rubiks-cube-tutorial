@@ -1,7 +1,8 @@
 (function ($) {
     $(function() {
-        let summernoteDescription = $('#summernote-description');
-        let descriptionValue= summernoteDescription.data('description-value');
-        summernoteDescription.summernote('code', descriptionValue);
+        var summernoteDescription = $('#summernote-description');
+        summernoteDescription.summernote({
+            height: 140
+        });
     });
 })(jQuery);
