@@ -12,27 +12,42 @@ class ArticleManagementController{
         render(view: "/cms/articleManagement/index", model: [articleList: response.list, articleCount:response.count])
     }
 
+    def create() {
+        render(view: "/cms/articleManagement/create")
+    }
+
+    def save() {
+        def response = articleManagementService.save(params, request)
+        if (response.isSuccess){
+            flash.message = g.message(code: 'cms.article.management.save.success.message') as Object
+            redirect(controller: "articleManagement", action: "index")
+        }else{
+            flash.error = g.message(code: 'cms.article.management.save.fail.error') as Object
+            render(view: "/cms/articleManagement/create", model: [article: response.article])
+        }
+    }
+
     def delete(Long id) {
         def response = articleManagementService.get(id)
         if (!response){
-            flash.error = 'Invalid Entity!'
-            redirect(uri: "/cms/articleManagement")
+            flash.error = g.message(code: 'cms.article.management.invalid.id.error') as Object
+            redirect(controller: "articleManagement", action: "index")
         }else{
             response = articleManagementService.delete(response)
             if (!response){
-                flash.message = 'Unable to Delete'
+                flash.error = g.message(code: 'cms.article.management.delete.fail.error') as Object
             }else{
-                flash.message = 'Article has been deleted'
+                flash.message = g.message(code: 'cms.article.management.delete.success.message') as Object
             }
-            redirect(uri: "/cms/articleManagement")
+            redirect(controller: "articleManagement", action: "index")
         }
     }
 
     def edit(Long id) {
         def response = articleManagementService.get(id)
         if (!response){
-            flash.error = 'Invalid Entity!'
-            redirect(uri: "/cms/articleManagement")
+            flash.error = g.message(code: 'cms.article.management.invalid.id.error') as Object
+            redirect(controller: "articleManagement", action: "index")
         }else{
             render(view: "/cms/articleManagement/edit", model:[article: response])
         }
@@ -41,16 +56,16 @@ class ArticleManagementController{
     def update() {
         def response = articleManagementService.get(params.id)
         if (!response){
-            flash.error = 'Invalid Entity ID!'
-            redirect(uri: "/cms/articleManagement")
+            flash.error = g.message(code: 'cms.article.management.invalid.id.error') as Object
+            redirect(controller: "articleManagement", action: "index")
         }else{
             def resp = articleManagementService.update(response, params, request)
             if (!resp.isSuccess){
-                flash.message = 'Invalid Update!'
-                redirect(uri: "/cms/articleManagement")
+                flash.error = g.message(code: 'cms.article.management.update.fail.error') as Object
+                render(view: "/cms/articleManagement/edit", model: [article: resp.article])
             }else{
-                flash.message = 'Update success!'
-                redirect(uri: "/cms/articleManagement")
+                flash.message = g.message(code: 'cms.article.management.update.success.message') as Object
+                redirect(controller: "articleManagement", action: "index")
             }
         }
     }
@@ -58,8 +73,8 @@ class ArticleManagementController{
     def show(Long id) {
         def response = articleManagementService.get(id)
         if (!response){
-            flash.error = 'Invalid Entity!'
-            redirect(uri: "/cms/articleManagement")
+            flash.error = g.message(code: 'cms.article.management.invalid.id.error') as Object
+            redirect(controller: "articleManagement", action: "index")
         }else{
             render(view: "/cms/articleManagement/show", model:[article: response])
         }

@@ -28,8 +28,8 @@
                     <h2><b><g:message code="cms.article.management.description" default="Description" /></b></h2>
                     <h3>${article.description}</h3>
                     <div class="mt-4">
-                         <g:link action="index" class="btn btn-secondary mr-3"><g:message code="cms.article.management.back.button" default="Back" /></g:link>
-                         <g:link action="edit" id="${article.id}" class="btn btn-info"><g:message code="cms.article.management.edit.button" default="Edit" /></g:link>
+                         <g:link action="index" class="btn btn-secondary mr-3 text-decoration-none"><g:message code="cms.article.management.back.button" default="Back" /></g:link>
+                         <g:link action="edit" id="${article.id}" class="btn btn-info text-decoration-none"><g:message code="cms.article.management.edit.button" default="Edit" /></g:link>
                     </div>
                 </div>
             </div>

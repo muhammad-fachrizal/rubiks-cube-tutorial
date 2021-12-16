@@ -3,7 +3,7 @@
         <!-- Left navbar links -->
         <ul class="navbar-nav ml-5">
             <li class="nav-item d-none d-sm-inline-block">
-                <a href="${createLink(controller: 'articleManagement', action: 'index')}" class="nav-link">
+                <a href="${createLink(controller: 'articleManagement', action: 'index')}" class="nav-link text-decoration-none">
                     <g:message code="header.article.label" default="Article" />
                 </a>
             </li>
@@ -12,7 +12,7 @@
         <ul class="navbar-nav ml-auto">
             <sec:ifLoggedIn>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    <a class="nav-link dropdown-toggle text-decoration-none" href="#" id="navbardrop" data-toggle="dropdown">
                         <sec:loggedInUserInfo field='username'/>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
