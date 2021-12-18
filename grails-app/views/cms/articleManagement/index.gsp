@@ -49,15 +49,42 @@
                                     <td class="font-weight-bold">${article.title}</td>
                                     <td class="o-table-description">${article.description}</td>
                                     <td class="project-actions text-right">
-                                            <g:link action="show" id="${article.id}" class="btn btn-sm btn-primary mr-2 text-decoration-none"><g:message code="cms.article.management.view.button" default="View" /></g:link>
-                                            <g:link action="edit" id="${article.id}" class="btn btn-sm btn-info mr-2 text-decoration-none"><g:message code="cms.article.management.edit.button" default="Edit" /></g:link>
-                                            <g:link action="delete" id="${article.id}" class="btn btn-sm btn-danger mr-2 text-decoration-none"><g:message code="cms.article.management.delete.button" default="Delete" /></g:link>
-
+                                        <g:link action="show" id="${article.id}" class="btn btn-sm btn-primary mr-2 text-decoration-none"><g:message code="cms.article.management.view.button" default="View" /></g:link>
+                                        <g:link action="edit" id="${article.id}" class="btn btn-sm btn-info mr-2 text-decoration-none"><g:message code="cms.article.management.edit.button" default="Edit" /></g:link>
+                                        <button type="button" data-article-id="${article.id}" data-article-title="${article.title}" class="btn btn-sm btn-danger mr-2" data-toggle="modal" data-target="#deleteModal">
+                                            <g:message code="cms.article.management.delete.button" default="Delete" />
+                                        </button>
                                     </td>
                                 </tr>
                             </g:each>
                         </tbody>
                     </table>
+                    <!-- Modal -->
+                    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModal" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle"><g:message code="cms.article.management.delete.modal.title" default="Delete Article" /></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <g:message code="cms.article.management.delete.modal.body" default="Are you sure to delete " />
+                                    <span class="js-modal-body font-weight-bold"></span>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary js-btn-cancel" data-dismiss="modal">
+                                        <g:message code="cms.article.management.cancel.button" default="Cancel" />
+                                    </button>
+                                    <g:link action="delete" data-href="/cms/articleManagement/delete/" class="btn btn-danger text-decoration-none js-delete-modal">
+                                        <g:message code="cms.article.management.delete.button" default="Delete" />
+                                    </g:link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pagination -->
                     <div class="pagination">
                         <g:paginate total="${articleCount}"/>
                     </div>
