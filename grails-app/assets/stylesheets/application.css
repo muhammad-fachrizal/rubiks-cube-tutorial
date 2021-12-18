@@ -10,6 +10,7 @@
 *= require bootstrap
 *= require summernote-lite.min
 *= require adminlte.min
+*= require all.min
 *= require grails
 *= require main
 *= require mobile

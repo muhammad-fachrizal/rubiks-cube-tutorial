@@ -708,3 +708,8 @@ img.grails-logo {
     display: none;
 }
 
+/*FONT SIZE OF ERROR CODE*/
+.c-error-code {
+    font-size: 50px;
+}
+
