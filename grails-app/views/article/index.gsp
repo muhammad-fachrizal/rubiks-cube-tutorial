@@ -24,8 +24,10 @@
                                     <div class="card-img-top c-img-article" style="background-image: url('${article.image}')"></div>
                                     <div class="card-body">
                                         <div class="o-text-article">
-                                            <p class="card-title" ><b>${article.title}</b></p>
-                                            <p class="card-text">${article.description}</p>
+                                            <p class="card-title" ><b>${article.title}</b></p><br>
+                                            <div class="card-text">
+                                                ${raw(article.description)}
+                                            </div>
                                             <a class="stretched-link btn" href="#"></a>
                                         </div>
                                     </div>
