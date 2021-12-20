@@ -1,31 +1,29 @@
 <!doctype html>
 <html>
     <head>
-        <title><g:if env="development">Grails Runtime Exception</g:if><g:else>Error</g:else></title>
+        <title><g:message code="500.header.label" default="500 Error"/></title>
         <meta name="layout" content="main">
-        <g:if env="development"><asset:stylesheet src="errors.css"/></g:if>
     </head>
     <body>
-        <g:if env="development">
-            <g:if test="${Throwable.isInstance(exception)}">
-                <g:renderException exception="${exception}" />
-            </g:if>
-            <g:elseif test="${request.getAttribute('javax.servlet.error.exception')}">
-                <g:renderException exception="${request.getAttribute('javax.servlet.error.exception')}" />
-            </g:elseif>
-            <g:else>
-                <ul class="errors">
-                    <li>An error has occurred</li>
-                    <li>Exception: ${exception}</li>
-                    <li>Message: ${message}</li>
-                    <li>Path: ${path}</li>
-                </ul>
-            </g:else>
-        </g:if>
-        <g:else>
-            <ul class="errors">
-                <li>An error has occurred</li>
-            </ul>
-        </g:else>
+        <section aria-label="500Error">
+            <div class="container">
+                <div class="row mt-5">
+                    <h1 class="text-danger text-right col-6 c-error-code">
+                        <g:message code="500.error.message.number" default="500"/>
+                    </h1>
+                    <div class="error-content col-6">
+                        <h2><i class="fas fa-exclamation-triangle text-danger"></i>
+                            <g:message code="500.error.message.label" default="Oops! Something went wrong."/>
+                        </h2>
+                        <p>
+                            <g:message code="500.error.message.description"/>
+                            <a href="${createLink(controller: 'homepage')}">
+                                <g:message code="500.error.message.return" default="return to homepage."/>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
