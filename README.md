@@ -23,22 +23,22 @@ https://rubiks-cube-29386.herokuapp.com/
 <img src="https://github.com/muhammad-fachrizal/rubiks-cube-tutorial/blob/master/Screenshot/article.png"> <br/>
 
 - CMS Article\
-www.rubiks-cube-29386.herokuapp.com/cms
+rubiks-cube-29386.herokuapp.com/cms
 
--) CMS Login
+  - CMS Login
 <img src="https://github.com/muhammad-fachrizal/rubiks-cube-tutorial/blob/master/Screenshot/cms_login.png"> <br/>
 
--) CMS List
+  - CMS List
 <img src="https://github.com/muhammad-fachrizal/rubiks-cube-tutorial/blob/master/Screenshot/cms_list.png"> <br/>
 
--) CMS Create
+  - CMS Create
 <img src="https://github.com/muhammad-fachrizal/rubiks-cube-tutorial/blob/master/Screenshot/cms_create.png"> <br/>
 
--) CMS View
+  - CMS View
 <img src="https://github.com/muhammad-fachrizal/rubiks-cube-tutorial/blob/master/Screenshot/cms_view.png"> <br/>
 
--) CMS Edit 
+  - CMS Edit 
 <img src="https://github.com/muhammad-fachrizal/rubiks-cube-tutorial/blob/master/Screenshot/cms_edit.png"> <br/>
 
--) CMS Delete
+  - CMS Delete
 <img src="https://github.com/muhammad-fachrizal/rubiks-cube-tutorial/blob/master/Screenshot/cms_delete.png"> <br/>
