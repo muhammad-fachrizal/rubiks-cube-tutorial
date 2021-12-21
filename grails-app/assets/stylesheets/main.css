@@ -626,15 +626,36 @@ img.grails-logo {
     color: #a60000;
 }
 
-/*IMAGE NOTATION*/
-.img-notation {
+.c-img-notation {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 140px;
 }
 
-/*LAYOUT CARD INSTRUCTION*/
+.c-img-instruction {
+    object-fit: contain;
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.c-img-article {
+    height:300px;
+    width:100%;
+    position:absolute;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+.btn-read-more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/*LAYOUT CARD*/
 .o-cards {
     margin-bottom:30px;
     display:-webkit-box;
@@ -651,15 +672,44 @@ img.grails-logo {
     margin-bottom: 30px;
 }
 
-.img-instruction {
-    display: block;
-    margin-top: 10px;
-    width: 140px;
+.o-text-article {
+    z-index:100;
+    padding-top:310px;
 }
 
-.btn-read-more {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+.card-title {
+    font-size:18px;
+    text-align:center;
+}
+
+.card-text {
+    line-height: 1.5em;
+    height: 4.5em;
+    overflow: hidden;
+    font-size: 14px;
+    display: inline-block;
+}
+
+/* CMS ARTICLE TABLE */
+.o-table-description {
+    line-height: 2em;
+    height: 3em;
+    overflow: hidden;
+    display: inline-block;
+}
+
+/*REMOVE IMAGE FILE UPLOAD ON SUMMERNOTE*/
+.note-group-select-from-files {
+    display: none;
+}
+
+/*REMOVE DOUBLE DROPDOWN ICON ON SUMMERNOTE*/
+.note-icon-caret{
+    display: none;
+}
+
+/*FONT SIZE OF ERROR CODE*/
+.c-error-code {
+    font-size: 50px;
 }
 
